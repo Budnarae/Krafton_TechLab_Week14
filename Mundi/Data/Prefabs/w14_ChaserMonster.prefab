@@ -1,27 +1,40 @@
 {
-  "ObjectName" : "Obstacle_Tree3",
+  "ObjectName" : "ChaserMonster",
   "OwnedComponents" : [{
       "CollisionType" : 0,
       "Density" : 10.000000,
-      "Id" : 13096,
+      "Id" : 3026,
       "Mass" : 10.000000,
       "MaterialSlots" : [{
-          "AssetPath" : "Default_OBJ",
+          "Type" : "None"
+        }, {
+          "AssetPath" : "glass_hair_M",
+          "Type" : "UMaterial"
+        }, {
+          "AssetPath" : "glass_hair_M",
+          "Type" : "UMaterial"
+        }, {
+          "AssetPath" : "body_M",
+          "Type" : "UMaterial"
+        }, {
+          "AssetPath" : "body_M1",
           "Type" : "UMaterial"
         }],
       "MobilityType" : 0,
-      "ObjectName" : "UStaticMeshComponent_7",
+      "ObjectName" : "USkeletalMeshComponent_2",
       "ParentId" : 0,
-      "RelativeLocation" : [0.000000, 0.000000, 0.000000],
-      "RelativeRotationEuler" : [0.000000, 0.000000, 0.000000],
+      "PhysicsAssetPathOverride" : "",
+      "RelativeLocation" : [1.475850, -8.399864, 6.603066],
+      "RelativeRotationEuler" : [0.000000, -0.000000, 0.000000],
       "RelativeScale" : [1.000000, 1.000000, 1.000000],
-      "StaticMesh" : "Data/Model/Trees/Tree3.obj",
-      "Type" : "UStaticMeshComponent",
+      "SkeletalMesh" : "Data/GameJamMonster/copzombie_l_actisdato.fbx",
+      "Type" : "USkeletalMeshComponent",
       "bBlockComponent" : false,
       "bCastShadows" : true,
       "bGenerateOverlapEvents" : true,
       "bHiddenInGame" : false,
       "bIsActive" : true,
+      "bIsCar" : false,
       "bIsTrigger" : false,
       "bIsVisible" : true,
       "bOverrideMass" : false,
@@ -29,23 +42,23 @@
       "bTickEnabled" : true,
       "bTickInEditor" : false
     }, {
-      "BoxExtent" : [1.000000, 1.000000, 12.000000],
-      "CollisionType" : 3,
+      "BoxExtent" : [0.500000, 0.500000, 1.000000],
+      "CollisionType" : 0,
       "Density" : 10.000000,
-      "Id" : 13097,
+      "Id" : 3058,
       "Mass" : 10.000000,
-      "MobilityType" : 1,
+      "MobilityType" : 0,
       "ObjectName" : "UBoxComponent_2",
-      "ParentId" : 13096,
-      "RelativeLocation" : [-0.539182, 0.000000, 11.934047],
-      "RelativeRotationEuler" : [0.000000, -2.019627, 0.000000],
-      "RelativeScale" : [0.330185, 0.237554, 1.000000],
+      "ParentId" : 3026,
+      "RelativeLocation" : [0.000000, 0.000000, 1.000000],
+      "RelativeRotationEuler" : [0.000000, 0.000000, 0.000000],
+      "RelativeScale" : [1.000000, 1.000000, 1.000000],
       "Type" : "UBoxComponent",
       "bBlockComponent" : false,
       "bGenerateOverlapEvents" : true,
       "bHiddenInGame" : false,
       "bIsActive" : true,
-      "bIsTrigger" : true,
+      "bIsTrigger" : false,
       "bIsVisible" : true,
       "bOverrideMass" : false,
       "bShapeHiddenInGame" : true,
@@ -55,16 +68,16 @@
       "bTickInEditor" : false
     }, {
       "ObjectName" : "ULuaScriptComponent_2",
-      "ScriptFilePath" : "Data/Scripts/w14_Obstacle.lua",
+      "ScriptFilePath" : "Data/Scripts/Monster/w14_ChaserMonsterMain.lua",
       "Type" : "ULuaScriptComponent",
       "bHiddenInGame" : false,
       "bIsActive" : true,
       "bTickEnabled" : true,
       "bTickInEditor" : false
     }],
-  "RootComponentId" : 13096,
-  "Tag" : "obstacle",
-  "Type" : "AStaticMeshActor",
+  "RootComponentId" : 3026,
+  "Tag" : "monster",
+  "Type" : "ASkeletalMeshActor",
   "bActorHiddenInGame" : false,
   "bActorIsActive" : true
 }
